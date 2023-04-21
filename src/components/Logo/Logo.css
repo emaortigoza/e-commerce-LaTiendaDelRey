@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Rubik+Mono+One&display=swap');
+
+.Titulo h3{
+    color: white;
+    font-family: 'Contrail One', cursive;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+}
