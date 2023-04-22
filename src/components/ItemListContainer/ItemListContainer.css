@@ -1,0 +1,16 @@
+.contenedor{
+    background-color: #d5161e;
+}
+.catalogo .card{
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    
+   }
+   
+   .catalogo .card .img{
+       padding: 5px;
+       margin: auto;
+       width: 250px;
+       height: 250px;
+       text-align: center;
+   }
