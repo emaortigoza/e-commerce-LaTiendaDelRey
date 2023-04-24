@@ -1,16 +1,37 @@
 .contenedor{
-    background-color: #d5161e;
+    background-color: white;
+
 }
 .catalogo .card{
     margin-inline: 20px;
     margin-bottom: 20px;
-    
    }
    
    .catalogo .card .img{
-       padding: 5px;
-       margin: auto;
-       width: 250px;
-       height: 250px;
+       padding: 10px;
+       background-color: #d5161e;
+       
+   }
+
+   .card{
+     width: 16rem;
+     height: auto;
+     margin: 20px;
+     color: whitesmoke;
+    font-size: 16px;
+   }
+   .body{
+    background-color: #d5161e;
+   }
+   .img{
+    margin: auto;
+       width: 300px;
+       height: 300px;
        text-align: center;
+   }
+
+   .card .button{
+    background-color: white;
+    color: #d5161e;
+    font-size: 12;
    }

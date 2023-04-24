@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap');
+
 .navbar{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
     background-color:#d5161e ;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.menu{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+.menuActivo{
+    background-color: white;
+    color: #d5161e;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu:hover{
+    background-color: white;
+    color: #d5161e;
+    border-radius: 20px;
+}
+.menuActivo:hover{
+    background-color: rgba(253, 242, 242, 0.849);
+    color: #d5161e;
+    border-radius: 20px;
+    text-align: center;
 }

@@ -1,21 +1,34 @@
 import { useEffect, useState } from "react"
 import mFetch from "../../utils/mFetch"
 import { Button, Card, Col, Container, Row } from "react-bootstrap"
+
+import { Link, useParams } from "react-router-dom"
 import './ItemListContainer.css'
 
-
 function ItemListContainer({greeting}) {
+
+    const{cid} = useParams();
+    console.log(cid)
     const[productos, setProductos] = useState([])
     const [loading, setloading] = useState(true)
 
     useEffect(() =>{
-      mFetch()
+      if (!cid) {
+        mFetch()
       .then( resultado => {
         setProductos(resultado)
       })
       .catch( error => console.log(error))
       .finally(()=> setloading(false))
-    },[])
+      }else{
+        mFetch()
+      .then( resultado => {
+        setProductos(resultado.filter(producto => producto.categoria === cid))
+      })
+      .catch( error => console.log(error))
+      .finally(()=> setloading(false))
+      }
+    },[cid])
 
   return (
     <Container fluid className="contenedor">
@@ -23,19 +36,20 @@ function ItemListContainer({greeting}) {
             { loading ? <h2>Cargando...</h2>
                       :
                        productos.map( producto => 
-                                                <Col className="col-xl-3 columnas">
-                                                <Card className="card" key={producto.id} style={{ width: '18rem' }}>
+                                                <Col className="col-xl-3 col-md-6 col-sm-12 columnas">
+                                                <Card className="card" key={producto.id}>
+                                                  <Link to={`/detail/${producto.id}`}>
                                                     <Card.Img className="img" variant="top" src={producto.foto} alt={producto.nombre} />
-                                                    <Card.Body>
+                                                  </Link>
+                                                    <Card.Body className="body">
                                                       <Card.Title>{producto.nombre}</Card.Title>
                                                       <Card.Text>
-                                                        {producto.categoria}
-                                                        <br />
-                                                        Some quick example text to build on the card title and make up the
-                                                         bulk of the card's content.
+                                                        {producto.categoria}...
                                                       </Card.Text>
                                                       <Card.Text>$ {producto.precio}</Card.Text>
-                                                     <Button text-center variant="primary">Detalle</Button>
+                                                      <Link to= '/detail'>
+                                                      <Button className="button">Detalle</Button>
+                                                      </Link>
                                                     </Card.Body>
                                                   </Card>
                                                 </Col>
