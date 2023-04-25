@@ -4,6 +4,7 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap"
 
 import { Link, useParams } from "react-router-dom"
 import './ItemListContainer.css'
+import ItemList from "../ItemList/ItemList"
 
 function ItemListContainer({greeting}) {
 
@@ -31,34 +32,7 @@ function ItemListContainer({greeting}) {
     },[cid])
 
   return (
-    <Container fluid className="contenedor">
-      <Row className="mt-5 catalogo">
-            { loading ? <h2>Cargando...</h2>
-                      :
-                       productos.map( producto => 
-                                                <Col className="col-xl-3 col-md-6 col-sm-12 columnas">
-                                                <Card className="card" key={producto.id}>
-                                                  <Link to={`/detail/${producto.id}`}>
-                                                    <Card.Img className="img" variant="top" src={producto.foto} alt={producto.nombre} />
-                                                  </Link>
-                                                    <Card.Body className="body">
-                                                      <Card.Title>{producto.nombre}</Card.Title>
-                                                      <Card.Text>
-                                                        {producto.categoria}...
-                                                      </Card.Text>
-                                                      <Card.Text>$ {producto.precio}</Card.Text>
-                                                      <Link to= '/detail'>
-                                                      <Button className="button">Detalle</Button>
-                                                      </Link>
-                                                    </Card.Body>
-                                                  </Card>
-                                                </Col>
-                                                  )  
-
-            } 
-      </Row>
-    </Container>
-   
+    loading ? <h2>Cargando...</h2> : <ItemList productos ={productos}/>
   )
 }
 

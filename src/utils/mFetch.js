@@ -31,10 +31,10 @@ let productos = [
 
 ]
 
-const mFetch = () => {
+const mFetch = (id) => {
   return new Promise((res, rej) =>{
     setTimeout(()=>{
-        res(productos)
+        res(!id ? productos : productos.find(producto => producto.id === id))
     },1000)
   })
 }
