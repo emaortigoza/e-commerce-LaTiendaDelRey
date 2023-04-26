@@ -2,7 +2,7 @@ import './itemDetail.css'
 
 const ItemDetail = ({producto}) => {
   return (
-    <div className='containergrilla'>
+    <div className='container'>
       <div className="grilla">
       <section className="imagen">
          <img src={producto.foto} alt="" />

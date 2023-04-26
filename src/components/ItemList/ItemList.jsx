@@ -5,7 +5,7 @@ import Item from '../Item/Item'
 
 const ItemList = ({productos}) => {
   return (
-    <Container fluid className="contenedor">
+    <Container fluid className="container">
       <Row className="mt-5 catalogo">
             
                       { productos.map( producto => <Item key={producto.id} producto={producto}/>  ) }
