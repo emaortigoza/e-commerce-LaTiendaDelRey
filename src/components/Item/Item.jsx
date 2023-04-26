@@ -15,7 +15,7 @@ const Item = ({producto: {id, foto, nombre, categoria, precio, descripcion}}) =>
               {categoria}...
             </Card.Text>
             <Card.Text>$ {precio}</Card.Text>
-            <Link to= '/detail'>
+            <Link to= {`/detail/${id}`}>
             <Button className="button">Detalle</Button>
             </Link>
           </Card.Body>

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import mFetch from "../../utils/mFetch"
-import { Button, Card, Col, Container, Row } from "react-bootstrap"
-
+import ItemList from "../ItemList/ItemList"
 import { Link, useParams } from "react-router-dom"
 import './ItemListContainer.css'
-import ItemList from "../ItemList/ItemList"
+import { Button, Card, Col, Container, Row, Spinner } from "react-bootstrap"
+import ItemSpinner from "../../Spinner/Spinner"
 
 function ItemListContainer({greeting}) {
 
@@ -32,7 +32,7 @@ function ItemListContainer({greeting}) {
     },[cid])
 
   return (
-    loading ? <h2>Cargando...</h2> : <ItemList productos ={productos}/>
+    loading ? <ItemSpinner/> : <ItemList productos ={productos}/>
   )
 }
 

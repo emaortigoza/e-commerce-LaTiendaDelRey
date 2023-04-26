@@ -1,5 +1,7 @@
+
+
 .contenedor{
-    background-color: white;
+    background-color: #d5161e;
 
 }
 .catalogo .card{
@@ -17,11 +19,11 @@
      width: 16rem;
      height: auto;
      margin: 20px;
-     color: whitesmoke;
+     color: rgb(8, 8, 8);
     font-size: 16px;
    }
    .body{
-    background-color: #d5161e;
+    background-color: #f0eeee;
    }
    .img{
     margin: auto;

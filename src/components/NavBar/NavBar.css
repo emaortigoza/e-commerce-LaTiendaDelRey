@@ -7,7 +7,7 @@
     padding: 10px;
     background-color:#d5161e ;
     font-family: 'Sora', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .logo{
@@ -23,7 +23,7 @@
 .menuActivo{
     background-color: white;
     color: #d5161e;
-    border-radius: 20px;
+    border-radius: 10px;
     text-decoration: none;
     padding: 10px;
 }
@@ -31,11 +31,11 @@
 .menu:hover{
     background-color: white;
     color: #d5161e;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .menuActivo:hover{
     background-color: rgba(253, 242, 242, 0.849);
     color: #d5161e;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
 }

@@ -5,8 +5,9 @@ import ItemLisContainer from './components/ItemListContainer/ItemListContainer'
 import ItemCount from './components/ItemCount/ItemCount';
 import ItemDetailContainer from './components/ItemDetailConteiner/ItemDetailContainer';
 
-import './App.css'
+//import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemBanner from './components/ItemBanner/ItemBanner';
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <Router>
       
       <NavBar/>
+      <ItemBanner/>
       <Routes> 
         <Route path='/' element={<ItemLisContainer/>}/>
         <Route path='/categoria/:cid' element={<ItemLisContainer />}/>

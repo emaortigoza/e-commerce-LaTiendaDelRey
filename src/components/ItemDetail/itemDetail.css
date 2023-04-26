@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containergrilla{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera, .imagen, .articulo{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.grilla{
+   display: flex;
+}
+
+.cabecera{
+
+}
+.imagen{
+  
+}
+.articulo{
+    
+}
+.articulo h2{
+   
+}
+
+@media screen and (max-width:1024px) {
+    
+}
+
+@media screen and (mix-width:768px) {
+
+}
+@media screen and (max-width: 420px) {
+    
+}

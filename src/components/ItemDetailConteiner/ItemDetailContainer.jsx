@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useEffect, useState } from "react"
 import mFetch from "../../utils/mFetch"
+import ItemSpinner from "../../Spinner/Spinner"
 
 
 const ItemDetailContainer = () => {
@@ -18,7 +19,10 @@ useEffect(()=>{
 console.log(pid)
   return (
     <>
-      {loading ? <h2>Cargando...</h2> : <ItemDetail producto={producto}/> }
+      <section>
+       {loading ? <ItemSpinner/>  : <ItemDetail producto={producto}/> } 
+      </section>
+      
       
     </>
   )

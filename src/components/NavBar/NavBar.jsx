@@ -15,7 +15,7 @@ function NavBar() {
                 <Link to='/' className='logo'><Logo/></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='text-white'/>
                 <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
-                    <Nav className="justify-content-end">
+                    <Nav className="justify-content-end" variant="tabs" defaultActiveKey="/home">
                         <NavLink to='/' className={({isActive})=> isActive ? 'menuActivo' : 'menu' }>Inicio</NavLink>
                         <NavLink to='/categoria/camisetas' className={({isActive})=> isActive ? 'menuActivo' : 'menu'}>Camisetas</NavLink>
                         <NavLink to='/categoria/mate' className={({isActive})=> isActive ? 'menuActivo' : 'menu'}>Mate</NavLink>
