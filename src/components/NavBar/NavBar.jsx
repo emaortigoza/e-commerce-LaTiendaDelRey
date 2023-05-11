@@ -10,7 +10,9 @@ function NavBar() {
 
   
   return (
-    <Navbar collapseOnSelect expand="lg" className='navbar'>
+    
+    
+      <Navbar collapseOnSelect expand="lg" className='navbar' sticky="top">
             <Container>
                 <Link to='/' className='logo'><Logo/></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='text-white'/>
@@ -28,6 +30,7 @@ function NavBar() {
                 </Navbar.Collapse>
             </Container>
     </Navbar>
+    
   )
 }
 
