@@ -16,7 +16,7 @@ useEffect(()=>{
   .finally(() => setLoading(false))
 },[])
 
-console.log(pid)
+
   return (
     <>
       <section>

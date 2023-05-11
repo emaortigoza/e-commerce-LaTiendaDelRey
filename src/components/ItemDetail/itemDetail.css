@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+
 .containergrilla{
     height: 100vh;
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.grilla{
+    background-color: whitesmoke;
 }
 
 .cabecera, .imagen, .articulo{

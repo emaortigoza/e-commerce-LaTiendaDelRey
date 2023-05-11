@@ -1,9 +1,10 @@
 
 
 .contenedor{
-    background-color: #d5161e;
+    background-color: red;
 
 }
+
 .catalogo .card{
     margin-inline: 20px;
     margin-bottom: 20px;
@@ -11,7 +12,7 @@
    
    .catalogo .card .img{
        padding: 10px;
-       background-color: #d5161e;
+       background-color: whitesmoke;
        
    }
 
@@ -19,11 +20,11 @@
      width: 16rem;
      height: auto;
      margin: 20px;
-     color: whitesmoke;
+     color: black;
     font-size: 16px;
    }
    .body{
-    background-color: #d5161e;
+    background-color: whitesmoke;
    }
    .img{
     margin: auto;

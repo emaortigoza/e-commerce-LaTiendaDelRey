@@ -20,10 +20,10 @@ const Footer = () => {
             <div className='box'>
                 <h2>CONTACTO</h2>
                 <div class="redSocial">
-                    <a href="" class="fa fa-facebook"></a>
-                    <a href="" class=" fa fa-instagram"></a>
-                    <a href="" class="fa fa-whatsapp"></a>
-                    <a href="" class="fa-sharp fa-solid fa-envelope"></a>
+                    <a href="" className="fa fa-facebook"></a>
+                    <a href="" className=" fa fa-instagram"></a>
+                    <a href="" className="fa fa-whatsapp"></a>
+                    <a href="" className="fa-sharp fa-solid fa-envelope"></a>
                 </div>
             </div>
         </div>
