@@ -22,10 +22,9 @@ function NavBar() {
                         <NavLink to='/categoria/camisetas' className={({isActive})=> isActive ? 'menuActivo' : 'menu'}>Camisetas</NavLink>
                         <NavLink to='/categoria/mate' className={({isActive})=> isActive ? 'menuActivo' : 'menu'}>Mate</NavLink>
                         <NavLink to='/categoria/asado' className={({isActive})=> isActive ? 'menuActivo' : 'menu'}>Asado</NavLink>
-                        <NavLink to="/categoria/contacto" className={({isActive})=> isActive ? 'menuActivo' : 'menu'}>Contacto</NavLink>
-                        <Link to= '/cart' className=' menu'>
+                        <NavLink to= '/cartModal' className=' menu'>
                             <CartWidget/>
-                        </Link>
+                        </NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

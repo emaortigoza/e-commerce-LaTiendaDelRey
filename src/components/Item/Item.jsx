@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Card, Col, Container, Row } from "react-bootstrap"
-import ItemCount from '../ItemCount/ItemCount'
+
 
 const Item = ({producto: {id, foto, nombre, categoria, precio, descripcion}}) => {
   return (
@@ -19,7 +19,7 @@ const Item = ({producto: {id, foto, nombre, categoria, precio, descripcion}}) =>
             </Card.Text>
             <Card.Text>$ {precio}</Card.Text>
             <div>
-              <ItemCount/>
+            <Link to={`/detail/${id}`} className='btn btn-outline-danger'>Agregar al carrito</Link>
             </div>  
           </Card.Body>
       </Card>

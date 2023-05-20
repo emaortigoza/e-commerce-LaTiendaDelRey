@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <div className='box'>
                 <h2>CONTACTO</h2>
-                <div class="redSocial">
+                <div className="redSocial">
                     <a href="" className="fa fa-facebook"></a>
                     <a href="" className=" fa fa-instagram"></a>
                     <a href="" className="fa fa-whatsapp"></a>

@@ -1,0 +1,31 @@
+.inner{
+    padding: 6rem;
+    padding-top: 1rem;
+    
+  
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 2px rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+    box-shadow: 7px 7px 20px #7a7a7a; 
+   
+}
+.campoFormulario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+.boton button{
+    padding: 10px;
+    margin: 10px;
+}
+
+
