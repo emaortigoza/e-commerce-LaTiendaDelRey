@@ -6,14 +6,21 @@ import { Link } from 'react-router-dom'
 
 
 
+
+
+
 const ItemDetail = ({producto}) => {
   const [isCant, setIsCant] = useState(false)
 
   const {agregarAlCarrito, cartList} = useCartContext()
 
+ 
+
+
   const onAdd = (cantidad) =>{
   agregarAlCarrito( { ...producto, cantidad} )
   setIsCant(true)
+  
 }
 
 
