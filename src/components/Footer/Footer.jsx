@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Rey from '../Logo/assets/Rey.png'
+import Rey from '../Logo/assets/logonuevo.jpg'
 import './Footer.css'
 
 

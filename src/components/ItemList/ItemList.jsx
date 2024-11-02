@@ -6,10 +6,10 @@ import Item from '../Item/Item'
 const ItemList = ({productos}) => {
   return (
     <Container fluid className="container">
-      <Row className="mt-5 catalogo">
+      <section className="gallery__container">
             
                       { productos.map( producto => <Item key={producto.id} producto={producto}/>  ) }
-      </Row>
+      </section>
     </Container>
   )
 }

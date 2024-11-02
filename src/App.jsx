@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 import ItemBanner from './components/ItemBanner/ItemBanner';
 import { CartContextProvider } from './context/CartContext';
 import Formulario from './components/Formulario/Formulario';
-//import './App.css'
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -35,7 +35,7 @@ function App() {
               <Route path='*' element={<Navigate to='/'/>}/>
             </Routes>
 
-            
+            <ItemBanner/>
             <Footer/>
           </Router>
         </div>

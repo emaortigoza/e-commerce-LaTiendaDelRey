@@ -1,0 +1,29 @@
+.button-add, .button-1 {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(217, 83, 79, 0.3);
+    margin-left: 10px;
+}
+
+.button-add:hover {
+    background-color: #c74743;
+}
+.button-1{
+    background-color: #d9534f;
+}
+
+label{
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #c74743;
+    font-weight: 600;
+
+}

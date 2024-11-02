@@ -31,7 +31,6 @@ const ItemDetailContainer = () => {
       <section>
        {loading ? <ItemSpinner/>  : <ItemDetail producto={producto}/> } 
       </section>
-      <ItemBanner/>
       
     </>
   )

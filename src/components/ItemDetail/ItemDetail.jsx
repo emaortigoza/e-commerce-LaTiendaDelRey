@@ -26,34 +26,33 @@ const ItemDetail = ({producto}) => {
 
 
   return (
-    <div className='container'>
-      <div className="grilla">
-        <section className="imagen">
-          <img src={producto.foto} alt="" />
-        </section>
-          <article className="articulo">
-            <h2>{producto.nombre}</h2>
-            <h3>{producto.descripcion}</h3>
-            <h3>${producto.precio}</h3>
-            <h3>Stock: {producto.stock}</h3>
-              <div className='boton'>
-              {
+
+    <div class="product-detail">
+      <div class="product-image">
+          <img src={producto.foto} alt={producto.nombre}/>
+      </div>
+    <div class="product-info">
+        <div class="product-title">{producto.nombre}</div>
+        <div class="product-description">
+        {producto.descripcion}
+        </div>
+        <div class="product-price">${producto.precio}</div>
+        <div class="product-stock">Stock: {producto.stock}</div>
+        <div class="quantity-container">
+        {
                 !isCant ? <ItemCount onAdd={onAdd}/> : <>
                                                         <div className='boton'>
-                                                          <Link to={'/cartModal'} className='btn btn-outline-danger'>Terminar compra</Link>
-                                                          <Link to={'/'} className='btn btn-outline-danger'>Seguir comprando</Link>
+                                                          <Link to={'/cartModal'} className='button-1'>Terminar compra</Link>
+                                                          <Link to={'/'} className='button-1'>Seguir comprando</Link>
                                                         </div>
                                                        
                                                       </>
               }
-              </div>
-          </article>
-      
-      
-      </div>
+        </div>
     </div>
-    
-      
+</div>
+
+
   )
 }
 
