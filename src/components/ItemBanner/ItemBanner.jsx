@@ -9,11 +9,11 @@ const ItemBanner = () => {
     
       <Carousel className='container'>
         <Carousel.Item className='contenedorImg'>
-          <img className="d-block w-100" src="/e-commerce-LaTiendaDelRey/public/banner-ecomerce/banner2.jpg" />
+          <img className="d-block w-100" src="/public/banner1.png" />
         </Carousel.Item>
        
         <Carousel.Item className='contenedorImg'>
-          <img className="d-block w-100" src="/e-commerce-LaTiendaDelRey/public/banner-ecomerce/banner5.jpg"/>
+          <img className="d-block w-100" src="/public/banner6.jpg"/>
         </Carousel.Item>
       </Carousel>
 

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Alert } from "react-bootstrap"
 
-export const fomularioValidacion = (WrappedComponent) => {
+export const formularioValidacion = (WrappedComponent) => {
     
     const FormularioValidacion = (props) =>{
         const [errors, setErrors]= useState({})
@@ -39,5 +39,5 @@ export const fomularioValidacion = (WrappedComponent) => {
         />
     }
 
-    return fomularioValidacion
+    return FormularioValidacion
 }
